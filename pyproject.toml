@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "too-late-rate"
+dynamic = ["version"]
+description = "Too Late rate and timing metrics for deployed radiology AI from HL7/RIS timestamps."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Sergey Morozov", email = "dr.morozov.sergey@gmail.com" }]
+keywords = ["radiology", "artificial intelligence", "HL7", "RIS", "latency", "turnaround time", "post-market monitoring"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Healthcare Industry",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = ["pandas>=2.0", "numpy>=1.23", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=12"]
+dev = ["pytest>=7", "pytest-cov>=4", "pyarrow>=12"]
+
+[project.scripts]
+too-late-rate = "too_late_rate.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/spmoroz/too-late-rate"
+Issues = "https://github.com/spmoroz/too-late-rate/issues"
+Documentation = "https://aimonitoring.drsergeymorozov.com"
+
+[tool.hatch.version]
+path = "src/too_late_rate/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/too_late_rate"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "README.md", "LICENSE", "NOTICE", "CHANGELOG.md", "CITATION.cff", ".zenodo.json", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

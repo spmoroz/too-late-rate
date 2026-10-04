@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+report/
+# never commit real data
+data/
+*.parquet
+!tests/**/*.parquet
+# never commit manuscripts or other PDFs (publisher embargo; Zenodo archives the whole repo)
+*.pdf
+*.PDF
+# local outputs
+smoke.csv
+smoke_report/

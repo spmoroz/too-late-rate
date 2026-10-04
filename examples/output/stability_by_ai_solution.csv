@@ -1,0 +1,6 @@
+ai_solution,n_quarters,first_quarter,last_quarter,cv_pct,spearman_rho,last_first_ratio,pattern,pattern_detail,median_min_2024Q1,median_min_2024Q2,median_min_2024Q3,median_min_2024Q4,median_min_2025Q1,median_min_2025Q2,median_min_2025Q3,median_min_2025Q4
+AI solution A,8,2024Q1,2025Q4,2.4054,0.0120,1.0000,steady_state,"CV 2.4%, rho 0.01, last/first 1.00",1.7917,1.7333,1.8000,1.8500,1.8500,1.8083,1.7417,1.7833
+AI solution E,8,2024Q1,2025Q4,3.9943,-0.1078,0.9847,steady_state,"CV 4.0%, rho -0.11, last/first 0.98",3.4917,3.6000,3.3667,3.7833,3.3833,3.3833,3.4667,3.5167
+AI solution B,8,2024Q1,2025Q4,13.5372,0.9762,1.3595,progressive_drift,"rho 0.98, last/first 1.36",2.9833,3.1833,3.3167,3.4083,3.9000,3.9750,3.9500,4.4333
+AI solution D,8,2024Q1,2025Q4,27.1515,0.3593,1.0111,transient_incident,"quarters 5-6 elevated (max 1.72x baseline 1.88), recovered in 2 later quarter(s)",1.8167,1.9333,1.8750,1.8917,3.2333,3.1167,1.8583,1.9333
+AI solution C,8,2024Q1,2025Q4,29.4961,-0.8571,0.5573,post_deployment_convergence,"rho -0.86, last/first 0.56",18.0000,14.0583,11.6083,9.9000,9.1167,8.9167,8.7417,9.1250

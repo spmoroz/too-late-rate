@@ -1,0 +1,31 @@
+# Example configuration for too-late-rate (used with the SYNTHETIC demo data).
+# Timestamps in the synthetic file have no UTC offset and are local times.
+timezone: Europe/Zurich
+ambiguous: NaT            # repeated local hour at DST end: NaT | earliest | latest
+
+# Logical name -> column name in your file. Only list columns that differ
+# from the defaults (the defaults are shown here for reference).
+columns:
+  exam_id: exam_id
+  ai_solution: ai_solution
+  modality: modality
+  site: site
+  report_created_ts: report_created_ts
+  report_finalized_ts: report_finalized_ts
+  ai_result_available_ts: ai_result_available_ts
+  study_end_ts: study_end_ts
+  ai_inference_start_ts: ai_inference_start_ts
+  ai_inference_end_ts: ai_inference_end_ts
+  ai_processing_seconds: ai_processing_seconds
+  ai_fetched_ts: ai_fetched_ts
+
+stability:
+  min_quarter_n: 20       # quarters with fewer latency-eligible exams are ignored
+  min_quarters: 3
+  steady_cv_max_pct: 15.0
+  trend_rho: 0.6
+  trend_ratio: 1.25
+  edge_quarters: 2
+  incident_factor: 1.3
+  incident_max_quarters: 2
+  recovery_factor: 1.15

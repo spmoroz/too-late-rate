@@ -1,0 +1,62 @@
+{
+  "title": "too-late-rate: Too Late rate and timing metrics for deployed radiology AI",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "publication_date": "2026-09-30",
+  "description": "<p>Open-source Python package that computes, from HL7/RIS timestamps: PACS-to-PACS AI latency decomposed into routing time (fetching, upload and download) and AI processing time, with routing share; the Too Late rate, the share of exams in which the report was finalized before the AI result was available, with the arrival category (before report creation, during dictation, after finalization); and quarterly median latency with coefficient of variation and a drift flag per AI solution. It implements the metric definitions of Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. J Am Coll Radiol 2026. The repository contains code and synthetic data only; no patient, examination or institutional data.</p>",
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "keywords": [
+    "radiology",
+    "artificial intelligence",
+    "HL7",
+    "latency",
+    "turnaround time",
+    "post-market monitoring"
+  ],
+  "creators": [
+    {
+      "name": "Morozov, Sergey",
+      "orcid": "0000-0001-6545-6170",
+      "affiliation": "Medlogic, Brussels, Belgium"
+    },
+    {
+      "name": "Heracleous, Natalie",
+      "affiliation": "3R Swiss Imaging Network, Sion, Switzerland"
+    },
+    {
+      "name": "Korka, Diana",
+      "affiliation": "3R Swiss Imaging Network, Sion, Switzerland"
+    },
+    {
+      "name": "Thouly, Cyril",
+      "affiliation": "3R Swiss Imaging Network, Sion, Switzerland"
+    },
+    {
+      "name": "Dufour, Benoît",
+      "affiliation": "3R Swiss Imaging Network, Sion, Switzerland"
+    },
+    {
+      "name": "Novarina, Octave",
+      "affiliation": "3R Swiss Imaging Network, Sion, Switzerland"
+    },
+    {
+      "name": "Rizk, Benoît",
+      "affiliation": "3R Swiss Imaging Network, Sion, Switzerland"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.jacr.2026.09.026",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://aimonitoring.drsergeymorozov.com",
+      "relation": "isDocumentedBy",
+      "resource_type": "other",
+      "scheme": "url"
+    }
+  ]
+}

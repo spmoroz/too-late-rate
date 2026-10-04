@@ -1,0 +1,70 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article listed under preferred-citation and the software release."
+title: "too-late-rate: Too Late rate and timing metrics for deployed radiology AI"
+type: software
+version: 1.0.0
+date-released: "2026-09-30"
+license: Apache-2.0
+repository-code: "https://github.com/spmoroz/too-late-rate"
+url: "https://aimonitoring.drsergeymorozov.com"
+abstract: "Python package that computes, from HL7/RIS timestamps, PACS-to-PACS AI latency decomposed into routing time (fetching, upload and download) and AI processing time, with routing share, the Too Late rate (share of exams in which the report was finalized before the AI result was available) with arrival categories, and quarterly median latency with coefficient of variation and a drift flag per AI solution."
+keywords:
+  - radiology
+  - artificial intelligence
+  - HL7
+  - latency
+  - turnaround time
+  - post-market monitoring
+authors:
+  - family-names: Morozov
+    given-names: Sergey
+    orcid: "https://orcid.org/0000-0001-6545-6170"
+    affiliation: "Medlogic, Brussels, Belgium"
+    email: dr.morozov.sergey@gmail.com
+  - family-names: Heracleous
+    given-names: Natalie
+    affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+  - family-names: Korka
+    given-names: Diana
+    affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+  - family-names: Thouly
+    given-names: Cyril
+    affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+  - family-names: Dufour
+    given-names: "Benoît"
+    affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+  - family-names: Novarina
+    given-names: Octave
+    affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+  - family-names: Rizk
+    given-names: "Benoît"
+    affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+preferred-citation:
+  type: article
+  title: "AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study"
+  journal: "Journal of the American College of Radiology"
+  year: 2026
+  doi: "10.1016/j.jacr.2026.09.026"
+  authors:
+    - family-names: Morozov
+      given-names: Sergey
+      orcid: "https://orcid.org/0000-0001-6545-6170"
+      affiliation: "Medlogic, Brussels, Belgium"
+    - family-names: Heracleous
+      given-names: Natalie
+      affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+    - family-names: Korka
+      given-names: Diana
+      affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+    - family-names: Thouly
+      given-names: Cyril
+      affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+    - family-names: Dufour
+      given-names: "Benoît"
+      affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+    - family-names: Novarina
+      given-names: Octave
+      affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
+    - family-names: Rizk
+      given-names: "Benoît"
+      affiliation: "3R Swiss Imaging Network, Sion, Switzerland"
