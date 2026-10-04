@@ -3,6 +3,7 @@ message: "If you use this software, please cite the article listed under preferr
 title: "too-late-rate: Too Late rate and timing metrics for deployed radiology AI"
 type: software
 version: 1.0.0
+doi: "10.5281/zenodo.23141600"
 date-released: "2026-09-30"
 license: Apache-2.0
 repository-code: "https://github.com/spmoroz/too-late-rate"

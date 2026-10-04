@@ -1,7 +1,7 @@
 # too-late-rate
 
 [![CI](https://github.com/spmoroz/too-late-rate/actions/workflows/ci.yml/badge.svg)](https://github.com/spmoroz/too-late-rate/actions/workflows/ci.yml)
-[![DOI](https://zenodo.org/badge/DOI/ZENODO_CONCEPT_DOI.svg)](https://doi.org/ZENODO_CONCEPT_DOI)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23141600.svg)](https://doi.org/10.5281/zenodo.23141600)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 `too-late-rate` is a Python package that measures whether results from deployed radiology AI reach the radiologist in time. It works on timestamps that most RIS and PACS already log through HL7.
@@ -119,7 +119,7 @@ Exclusions: exams with report created after report finalized are excluded from t
 Please cite the article, and the software release if you used the code:
 
 - Article: Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. *J Am Coll Radiol*. 2026. doi:10.1016/j.jacr.2026.09.026
-- Software: Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. too-late-rate (version 1.0.0). Zenodo. 2026. doi:ZENODO_CONCEPT_DOI
+- Software: Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. too-late-rate (version 1.0.0). Zenodo. 2026. doi:10.5281/zenodo.23141600
 
 Citation metadata are in [`CITATION.cff`](CITATION.cff); GitHub shows a "Cite this repository" button.
 
